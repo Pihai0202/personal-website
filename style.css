@@ -249,6 +249,13 @@ button, input, textarea {
     box-shadow: 0 0 8px var(--accent-purple);
 }
 
+.logo-img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
 .nav-menu {
     display: flex;
     gap: 2.2rem;
