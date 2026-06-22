@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="Chin-Ying-Yang 的個人首頁。目前是小小工讀生。">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-dot"></span> Aria.Dev
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active" id="nav-link-home">首頁</a>
+                <a href="#about" class="nav-link" id="nav-link-about">關於我</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="切換選單">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="badge-accent">✨ Ready for New Challenges</span>
+                    <h1 class="hero-title">
+                        創造具備<br>
+                        <span class="text-gradient">屬於你自己的專屬演唱會行事曆</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        我是Chin-Ying-Yang，目前任職於中華職業棒球大聯盟統一7-ELEVEn獅球團。
+                    </p>
+                    
+
+
+                    <div class="custom-links-container">
+                        <a href="https://concert.pihai0202.com" target="_blank" class="btn-custom-link btn-concert" id="hero-btn-concert">
+                            <i data-lucide="music"></i> 音樂會專案
+                        </a>
+                        <a href="https://github.com/pihai0202" target="_blank" class="btn-custom-link btn-github" id="hero-btn-github">
+                            <i data-lucide="github"></i> GitHub
+                        </a>
+                        <a href="https://drive.google.com" target="_blank" class="btn-custom-link btn-drive" id="hero-btn-drive">
+                            <i data-lucide="hard-drive"></i> 個人雲端硬碟
+                        </a>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com" target="_blank" class="social-icon" aria-label="GitHub" id="social-gh">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn" id="social-li">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="mailto:aria@example.com" class="social-icon" aria-label="Email" id="social-mail">
+                            <i data-lucide="mail"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-image-container">
+                    <div class="avatar-glow"></div>
+                    <div class="avatar-card">
+                        <img src="avatar.png" alt="Aria Chen Avatar" class="avatar-img" id="hero-avatar">
+                    </div>
+                    <div class="floating-badge badge-1">
+                        <div class="badge-icon"><i data-lucide="code-2"></i></div>
+                        <div>
+                            <span class="badge-title">Developer</span>
+                            <span class="badge-desc">React / CSS / JS</span>
+                        </div>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <div class="badge-icon"><i data-lucide="palette"></i></div>
+                        <div>
+                            <span class="badge-title">Designer</span>
+                            <span class="badge-desc">我不知道 / 我不會</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-down">
+                <a href="#about" aria-label="向下滾動" id="scroll-arrow">
+                    <span class="mouse-icon">
+                        <span class="wheel"></span>
+                    </span>
+                    <i data-lucide="chevrons-down" class="arrow-blink"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">關於我的故事</h2>
+                    <div class="title-line"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h3>職棒工讀生</h3>
+                        <p>
+                            我擁有關於職棒的所有知識，並且可以引導觀眾安全的看球，站在第一線服務球迷。
+                        </p>
+                        <p>
+                            不論是仔細地聽取無線電內容，還是保護球迷安全以及動線相關問題，我總是對細節保持高度的追求與熱情。
+                        </p>
+                        <div class="personal-info">
+                            <div class="info-item">
+                                <span class="info-label">來自</span>
+                                <span class="info-value">台灣，台南</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">任職狀態</span>
+                                <span class="info-value text-accent">在職中</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-stats">
+                        <div class="stat-card glass-panel">
+                            <h4 class="stat-number">1</h4>
+                            <p class="stat-label">年職涯</p>
+                        </div>
+                        <div class="stat-card glass-panel">
+                            <h4 class="stat-number">10+</h4>
+                            <p class="stat-label">完成賽事</p>
+                        </div>
+                        <div class="stat-card glass-panel">
+                            <h4 class="stat-number">99%</h4>
+                            <p class="stat-label">客戶滿意度</p>
+                        </div>
+                        <div class="stat-card glass-panel">
+                            <h4 class="stat-number">20k+</h4>
+                            <p class="stat-label">賺取新台幣數</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <span class="logo"><span class="logo-dot"></span> Yang.Dev</span>
+                <p>專注比賽第一線的狀態以及球迷安全，讓球迷可以安心看球快樂回家。</p>
+            </div>
+            
+            <div class="footer-links">
+                <a href="#home">首頁</a>
+                <a href="#about">關於我</a>
+            </div>
+            
+            <div class="footer-copyright">
+                <p>&copy; 2026 Chin-Ying-Yang. All Rights Reserved. Built with Antigravity AI.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" aria-label="回頂端">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
