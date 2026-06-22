@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css?v=1.1">
+    <link rel="stylesheet" href="style.css?v=1.2">
     
     <!-- Lucide Icons CDN -->
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -199,6 +199,53 @@
     <button class="back-to-top" id="back-to-top" aria-label="回頂端">
         <i data-lucide="arrow-up"></i>
     </button>
+
+    <!-- Projects Modal -->
+    <div class="modal-overlay" id="projects-modal">
+        <div class="modal-card glass-panel">
+            <button class="modal-close" id="modal-close-btn" aria-label="關閉視窗">
+                <i data-lucide="x"></i>
+            </button>
+            <h3 class="modal-title">作業專案總覽</h3>
+            <p class="modal-subtitle">點選下方按鈕可直接開啟專案或查看 GitHub 原始碼</p>
+            
+            <div class="modal-projects-list">
+                <!-- Project 1 -->
+                <div class="modal-project-item">
+                    <div class="modal-project-info">
+                        <span class="modal-project-tag">益智遊戲</span>
+                        <h4>Water Puzzle (分水謎題)</h4>
+                        <p>經典的分水分類益智遊戲，利用 JavaScript 實作試管間的水顏色排序與通關邏輯。</p>
+                    </div>
+                    <div class="modal-project-actions">
+                        <a href="https://pihai0202.github.io/homework/waterpuzzle/" target="_blank" class="btn-primary btn-sm">
+                            <i data-lucide="external-link"></i> 直接開啟
+                        </a>
+                        <a href="https://github.com/Pihai0202/homework/tree/main/waterpuzzle" target="_blank" class="btn-secondary btn-sm">
+                            <i data-lucide="github"></i> 原始碼
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="modal-project-item">
+                    <div class="modal-project-info">
+                        <span class="modal-project-tag">經典遊戲</span>
+                        <h4>Minesweeper (踩地雷)</h4>
+                        <p>網頁版經典踩地雷遊戲，具備地雷隨機鋪設、格子翻開、插旗及勝負偵測等功能。</p>
+                    </div>
+                    <div class="modal-project-actions">
+                        <a href="https://pihai0202.github.io/homework/mine.html" target="_blank" class="btn-primary btn-sm">
+                            <i data-lucide="external-link"></i> 直接開啟
+                        </a>
+                        <a href="https://github.com/Pihai0202/homework/blob/main/mine.html" target="_blank" class="btn-secondary btn-sm">
+                            <i data-lucide="github"></i> 原始碼
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Scripts -->
     <script src="script.js"></script>

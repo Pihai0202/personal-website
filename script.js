@@ -113,4 +113,37 @@ document.addEventListener('DOMContentLoaded', () => {
         revealObserver.observe(el);
     });
 
+    // 7. Projects Modal Handler
+    const homeworkBtn = document.getElementById('hero-btn-drive');
+    const projectsModal = document.getElementById('projects-modal');
+    const modalCloseBtn = document.getElementById('modal-close-btn');
+
+    if (homeworkBtn && projectsModal && modalCloseBtn) {
+        homeworkBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            projectsModal.classList.add('open');
+            document.body.style.overflow = 'hidden'; // prevent page scrolling
+        });
+
+        const closeModal = () => {
+            projectsModal.classList.remove('open');
+            document.body.style.overflow = ''; // restore scrolling
+        };
+
+        modalCloseBtn.addEventListener('click', closeModal);
+
+        // Close on clicking overlay background
+        projectsModal.addEventListener('click', (e) => {
+            if (e.target === projectsModal) {
+                closeModal();
+            }
+        });
+
+        // Close on Esc key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && projectsModal.classList.contains('open')) {
+                closeModal();
+            }
+        });
+    }
 });
